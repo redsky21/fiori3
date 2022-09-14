@@ -5,13 +5,15 @@ import '@ui5/webcomponents-theme-base/dist/Assets';
 import '@ui5/webcomponents/dist/generated/json-imports/Themes';
 import '@ui5/webcomponents-fiori/dist/generated/json-imports/Themes';
 import '@ui5/webcomponents-icons/dist/person-placeholder';
+import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme.js';
+
 import { ThemeProvider } from '@ui5/webcomponents-react';
 import {
   Button,
   ShellBar,
   ShellBarItem,
 } from '@ui5/webcomponents-react/wrappers';
-import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme';
+import any = jasmine.any;
 
 function App() {
   return (
