@@ -1,25 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import '@ui5/webcomponents-theme-base/dist/Assets';
+import '@ui5/webcomponents/dist/generated/json-imports/Themes';
+import '@ui5/webcomponents-fiori/dist/generated/json-imports/Themes';
+import '@ui5/webcomponents-icons/dist/person-placeholder';
+import { ThemeProvider } from '@ui5/webcomponents-react';
+import {
+  Button,
+  ShellBar,
+  ShellBarItem,
+} from '@ui5/webcomponents-react/wrappers';
+import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <ShellBar
+        primary-title="primary-title"
+        logo={
+          <img
+            alt="SAP Logo"
+            slot="logo"
+            src="https://sap.github.io/ui5-webcomponents/assets/images/sap-logo-svg.svg"
+          />
+        }
+      >
+        <ShellBarItem icon="person-placeholder" />
+      </ShellBar>
+      <Button>안녕</Button>
+    </ThemeProvider>
   );
 }
 

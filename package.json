@@ -7,9 +7,17 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/lodash": "^4.14.185",
     "@types/node": "^16.11.59",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "@ui5/webcomponents": "^1.7.1",
+    "@ui5/webcomponents-base": "^1.7.1",
+    "@ui5/webcomponents-fiori": "^1.7.1",
+    "@ui5/webcomponents-icons": "^1.7.1",
+    "@ui5/webcomponents-react": "^0.28.1",
+    "@ui5/webcomponents-react-base": "^0.28.0",
+    "@ui5/webcomponents-theme-base": "^1.0.0-rc.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -39,5 +47,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
   }
 }
