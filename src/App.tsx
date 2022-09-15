@@ -24,7 +24,8 @@ import './App.css';
 import '@ui5/webcomponents/dist/Assets';
 import '@ui5/webcomponents-react/dist/Assets';
 import '@ui5/webcomponents-fiori/dist/Assets'; // Only if using the @ui5/webcomponents-fiori package
-import '@ui5/webcomponents-icons/dist/calendar'; // Only if using the @ui5/webcomponents-icons package
+import '@ui5/webcomponents-icons/dist/calendar';
+import { DemoAnalyticalTable } from './components/DemoAnalyticalTable'; // Only if using the @ui5/webcomponents-icons package
 
 type LiveTimelineProps = {
   filterText: string;
@@ -175,7 +176,7 @@ const App = () => {
           {rows}
         </Table>
       </div>
-      ;
+      <DemoAnalyticalTable></DemoAnalyticalTable>
     </ThemeProvider>
   );
 };
