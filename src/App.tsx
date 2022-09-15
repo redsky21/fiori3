@@ -1,22 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 // import '@ui5/webcomponents-theme-base/dist/Assets';
 // import '@ui5/webcomponents/dist/generated/json-imports/Themes';
 // import '@ui5/webcomponents-fiori/dist/generated/json-imports/Themes';
-// import '@ui5/webcomponents-icons/dist/person-placeholder';
 
-import { ThemeProvider } from '@ui5/webcomponents-react';
-import {
-  Button,
-  ShellBar,
-  ShellBarItem,
-} from '@ui5/webcomponents-react/wrappers';
-import any = jasmine.any;
+import { Button, ShellBar, ShellBarItem } from '@ui5/webcomponents-react';
+// import any = jasmine.any;
 
 function App() {
   return (
-    <ThemeProvider>
+    <div>
       <ShellBar
         primary-title="primary-title"
         logo={
@@ -29,8 +23,8 @@ function App() {
       >
         <ShellBarItem icon="person-placeholder" />
       </ShellBar>
-      <Button>안녕</Button>
-    </ThemeProvider>
+      <Button icon="employee">hello</Button>
+    </div>
   );
 }
 
