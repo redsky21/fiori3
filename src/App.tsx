@@ -25,7 +25,8 @@ import '@ui5/webcomponents/dist/Assets';
 import '@ui5/webcomponents-react/dist/Assets';
 import '@ui5/webcomponents-fiori/dist/Assets'; // Only if using the @ui5/webcomponents-fiori package
 import '@ui5/webcomponents-icons/dist/calendar';
-import { DemoAnalyticalTable } from './components/DemoAnalyticalTable'; // Only if using the @ui5/webcomponents-icons package
+import { DemoAnalyticalTable } from './components/DemoAnalyticalTable';
+import { MemberTest } from './pages/MemberTest'; // Only if using the @ui5/webcomponents-icons package
 
 type LiveTimelineProps = {
   filterText: string;
@@ -85,7 +86,7 @@ const LiveToolbar: React.FC<LiveToolbarProps> = (props) => {
 
   return (
     <ShellBar
-      primaryTitle="Lives in My Life"
+      primaryTitle="LGE Next Global ERP"
       logo={
         <img
           alt="SAPUI5 Logo"
@@ -146,52 +147,7 @@ const App = () => {
           filterText={filterText}
           onFilterTextChange={handleFilterTextChange}
         />
-        <Label>하이</Label>
-        <Input name="이름" placeholder="안녕">
-          안녕
-        </Input>
-        <LiveTimeline filterText={filterText} />
-        <LiveTimeline filterText={filterText} />
-        <div>
-          <Label
-            id="myLabel"
-            for="myInput"
-            required
-            showColon
-            style={{ display: 'inline' }}
-          >
-            first name
-          </Label>
-          <Input
-            id="myInput"
-            aria-required={true}
-            accessibleNameRef="myLabel"
-          ></Input>
-        </div>
-        <div
-          style={{
-            height: '250px',
-            overflow: 'auto',
-          }}
-        >
-          <Table
-            onLoadMore={onLoadMore}
-            growing={TableGrowingMode.Scroll}
-            columns={
-              <>
-                <TableColumn>
-                  <Label>Column 1</Label>
-                </TableColumn>
-                <TableColumn>
-                  <Label>Column 2</Label>
-                </TableColumn>
-              </>
-            }
-          >
-            {rows}
-          </Table>
-        </div>
-        <DemoAnalyticalTable></DemoAnalyticalTable>
+        <MemberTest></MemberTest>
       </FlexBox>
     </ThemeProvider>
   );
