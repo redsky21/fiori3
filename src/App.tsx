@@ -1,11 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import '@ui5/webcomponents-theme-base/dist/Assets';
-import '@ui5/webcomponents/dist/generated/json-imports/Themes';
-import '@ui5/webcomponents-fiori/dist/generated/json-imports/Themes';
-import '@ui5/webcomponents-icons/dist/person-placeholder';
-import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme.js';
+// import '@ui5/webcomponents-theme-base/dist/Assets';
+// import '@ui5/webcomponents/dist/generated/json-imports/Themes';
+// import '@ui5/webcomponents-fiori/dist/generated/json-imports/Themes';
+// import '@ui5/webcomponents-icons/dist/person-placeholder';
 
 import { ThemeProvider } from '@ui5/webcomponents-react';
 import {
