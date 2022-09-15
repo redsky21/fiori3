@@ -152,31 +152,47 @@ const App = () => {
         </Input>
         <LiveTimeline filterText={filterText} />
         <LiveTimeline filterText={filterText} />
-      </FlexBox>
-      <div
-        style={{
-          height: '250px',
-          overflow: 'auto',
-        }}
-      >
-        <Table
-          onLoadMore={onLoadMore}
-          growing={TableGrowingMode.Scroll}
-          columns={
-            <>
-              <TableColumn>
-                <Label>Column 1</Label>
-              </TableColumn>
-              <TableColumn>
-                <Label>Column 2</Label>
-              </TableColumn>
-            </>
-          }
+        <div>
+          <Label
+            id="myLabel"
+            for="myInput"
+            required
+            showColon
+            style={{ display: 'inline' }}
+          >
+            first name
+          </Label>
+          <Input
+            id="myInput"
+            aria-required={true}
+            accessibleNameRef="myLabel"
+          ></Input>
+        </div>
+        <div
+          style={{
+            height: '250px',
+            overflow: 'auto',
+          }}
         >
-          {rows}
-        </Table>
-      </div>
-      <DemoAnalyticalTable></DemoAnalyticalTable>
+          <Table
+            onLoadMore={onLoadMore}
+            growing={TableGrowingMode.Scroll}
+            columns={
+              <>
+                <TableColumn>
+                  <Label>Column 1</Label>
+                </TableColumn>
+                <TableColumn>
+                  <Label>Column 2</Label>
+                </TableColumn>
+              </>
+            }
+          >
+            {rows}
+          </Table>
+        </div>
+        <DemoAnalyticalTable></DemoAnalyticalTable>
+      </FlexBox>
     </ThemeProvider>
   );
 };

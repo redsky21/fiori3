@@ -3,10 +3,11 @@
   "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
   "plugins": ["@typescript-eslint", "prettier"],
   "ignorePatterns": ["node_modules/"],
-  "@typescript-eslint/no-empty-function": "off",
   "env": {
     "browser": true,
     "node": true
   },
-  "rules": { "@typescript-eslint/explicit-module-boundary-types": "off" }
+  "rules": { "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off"
+  }
 }
