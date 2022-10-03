@@ -13,12 +13,18 @@ import { useEffect, useState } from 'react';
 
 export const DemoAnalyticalTable = () => {
   const [rowData, setRowData] = useState([] as TMemberDto[]);
+
+  const testOdata = () => {
+    const baseUrl = 'http://localhost:8080/api/browse/Books';
+    const query = { filter: { FirstName: 'Russell' } };
+  };
+
   const handleButtonClick = () => {
     console.log('click');
 
     const response = AxiosClient.get<Array<TMemberDto>>('/members3');
-
     console.log('response', response);
+
     response.then((response) => {
       const tmpRow: TMemberDto[] = [];
       response.data.forEach((row: TMemberDto) => {
